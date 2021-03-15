@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai6</title>
+</head>
+<body>
+    <label>Enter number V</label>
+    <input type="number" id="numV">
+    <button id="checkV" onclick="myFunction()">Check</button>
+    <p id="result"></p>
+<script>
+    let array = [];
+    let i = 0;
+
+    do {
+        let value = prompt("Enter a integer number");
+        array[i] = value;
+        i++;
+    }
+    while (i<10)
+    console.log(array);
+    function myFunction(){
+        let count1 = 0;
+        let count2 = 0;
+        let valueRef = document.getElementById("numV").value;
+        for(let j =0;j<array.length;j++){
+            if(valueRef ==  array[j]){
+            count1++;
+             }
+            else count2++;
+            }
+        if (count2 == 0){
+            document.getElementById("result").innerHTML = "V is not in the array"
+        }
+        if(count1>0){
+            document.getElementById("result").innerHTML = "V is in the array"
+        }
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai8</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai6</title>
+</head>
+<body>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    let array = [];
+    let i = 0;
+    do {
+        let value = prompt("Enter a integer number");
+        array[i] = value;
+        i++;
+    }
+    while (i<10)
+    for(let i =0;i<array.length;i++){
+        document.getElementById("result").innerHTML += array[i] + " ";
+    }
+    array.sort(function (a,b){return b- a})
+    // for(let j=0;j<array.length;j++){
+    //     if(array[j]>array[j-1]){
+    //         temp = array[j-1];
+    //         array[j-1] = array[j];
+    //         array[j] = temp;
+    //     }
+    // }
+    console.log(array)
+    for(let i =0;i<array.length;i++){
+        document.getElementById("result1").innerHTML += array[i] + " ";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai 2</title>
+</head>
+<body>
+    <p id="result_value"></p>
+<script>
+    let array = [123,4,325,24,5,345,12,3123,12,2];
+    let max = array[0];
+    for(let i=1;i<array.length;i++){
+        if(array[i]>max){
+            max = array[i];
+        }
+    }
+    document.getElementById("result_value").innerHTML = "Gia tri lon nhat la: " + max;
+
+</script>
+</body>
+</html>
